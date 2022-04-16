@@ -1,8 +1,7 @@
 const Discord = require("discord.js");
 const fs = require('fs');
-const dotenv = require('dotenv'); 
-dotenv.config();
-const prefix = process.env.prefix;
+const dotenv = require('dotenv').config();
+const prefix = process.env.PREFIX;
 const commandsFiles = fs.readdirSync("./commands");
 
 module.exports = {
